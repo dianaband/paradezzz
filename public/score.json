@@ -1,0 +1,176 @@
+[
+  {
+    "object": { "id": 1, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fparade.png?v=1604238229032",
+               "size": { "base": 60, "random": 20 }, "y": { "base": 30, "random": 20 }, "showtime": 12000 },
+    "timegap": { "base": 5000, "random": 1000 }
+  },
+  {
+    "object": { "id": 2, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fparade.png?v=1604238229032",
+               "size": { "base": 60, "random": 20 }, "y": { "base": 30, "random": 20 }, "showtime": 8000 },
+    "timegap": { "base": 5000, "random": 1000 }
+  },
+  {
+    "object": { "id": 3, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fzine03.png?v=1604238228655",
+               "size": { "base": 60, "random": 20 }, "y": { "base": 30, "random": 20 }, "showtime": 12000 },
+    "timegap": { "base": 5000, "random": 1000 }
+  },
+  {
+    "object": { "id": 4, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fzine02.png?v=1604238229084",
+               "size": { "base": 60, "random": 20 }, "y": { "base": 30, "random": 10 }, "showtime": 8000 },
+    "timegap": { "base": 5000, "random": 1000 }
+  },
+  {
+    "object": { "id": 5, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fzine01.png?v=1604238229556",
+               "size": { "base": 60, "random": 20 }, "y": { "base": 20, "random": 20 }, "showtime": 10000 },
+    "timegap": { "base": 5000, "random": 1000 }
+  },
+  {
+    "object": { "id": 6, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fzine04.png?v=1604296432721",
+               "size": { "base": 60, "random": 20 }, "y": { "base": 40, "random": 20 }, "showtime": 8000 },
+    "timegap": { "base": 5000, "random": 1000 }
+  },
+  {
+    "object": { "id": 7, "type": "intro", "src": "https://https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fi2.png?v=1604322586244",
+               "size": { "base": 60, "random": 20 }, "y": { "base": 20, "random": 10 }, "showtime": 11000 },
+    "timegap": { "base": 5000, "random": 1000 }
+  },
+  {
+    "object": { "id": 8, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fi2.png?v=1604322586244",
+               "size": { "base": 60, "random": 20 }, "y": { "base": 40, "random": 20 }, "showtime": 10000 },
+    "timegap": { "base": 5000, "random": 1000 }
+  },
+  {
+    "object": { "id": 9, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fi5.png?v=1604322586568",
+               "size": { "base": 60, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 10, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fzine04.png?v=1604296432721",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 10, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 11, "type": "icon", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fi5.png?v=1604322586568",
+                 "pivot": { "x": 10, "y": 20}, "rotate": 1,
+               "size": { "base": 30, "random": 0 }, "y": { "base": 10, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 1000, "random": 0 }
+  },
+  {
+    "object": { "id": 12, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fi1.png?v=1604322585603",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 13, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fi4.png?v=1604322586082",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  
+  {
+    "object": { "id": 14, "type": "intro", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2Fi3.png?v=1604322586845",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 15, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F06.jpg?v=1603876746056",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 16, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F04.jpg?v=1603876746172",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 17, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F07.png?v=1603876746224",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 18, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F02.jpg?v=1603876746250",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 19, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F08.png?v=1603876746436",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 20, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F09.png?v=1603876746685",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+   {
+    "object": { "id": 21, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F06.jpg?v=1603876746056",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 22, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F04.jpg?v=1603876746172",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 23, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F07.png?v=1603876746224",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 24, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F02.jpg?v=1603876746250",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 25, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F08.png?v=1603876746436",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 26, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F09.png?v=1603876746685",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+   {
+    "object": { "id": 27, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F06.jpg?v=1603876746056",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 28, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F04.jpg?v=1603876746172",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 29, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F07.png?v=1603876746224",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 30, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F02.jpg?v=1603876746250",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 31, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F08.png?v=1603876746436",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 32, "type": "drawing1", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F09.png?v=1603876746685",
+               "size": { "base": 30, "random": 10 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 10000, "random": 0 }
+  },
+  {
+    "object": { "id": 21, "type": "icon", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F002.png?v=1604307692659",
+               "pivot": { "x": 10, "y": 20}, "rotate": 2,
+               "size": { "base": 30, "random": 0 }, "y": { "base": 30, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 1000, "random": 0 }
+  },
+  {
+    "object": { "id": 22, "type": "icon", "src": "https://cdn.glitch.com/81ce6c64-3076-49af-8fce-b1700e7e4f12%2F002.png?v=1604307692659",
+               "pivot": { "x": 10, "y": 20}, "rotate": 1,
+               "size": { "base": 30, "random": 0 }, "y": { "base": 10, "random": 10 }, "showtime": 10000 },
+    "timegap": { "base": 1000, "random": 0 }
+  }
+]

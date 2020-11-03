@@ -1,0 +1,19 @@
+html, body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: Monaco;
+}
+
+@keyframes rolling {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rolling 3s linear infinite;
+}
