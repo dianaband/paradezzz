@@ -10,7 +10,7 @@ if (http_confirm == "http") {
   window.location.replace("https://" + location.host);
 }
 
-var socket = io("https://dianaband-paradezzz.glitch.me/");
+var socket = io(location.host);
 var n = 0;
 var fr = 20;
 var arr = [];
