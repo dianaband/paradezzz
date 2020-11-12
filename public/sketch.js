@@ -1,5 +1,5 @@
 /*
-global loadSound frameRate background createButton io noCanvas 
+global loadSound frameRate background createButton io noCanvas
 select createP windowWidth windowHeight random createImg createDiv
 AUTO loadJSON createCanvas createRadio selectAll int str
 */
@@ -24,74 +24,32 @@ function preload() {
   loadJSON("/score.json", function(json) {
     score = json;
   });
-  silence = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F_silence.wav?v=1605079435755"
-  );
+  silence = loadSound("_silence.wav");
 }
 
 function setup() {
   noCanvas();
   frameRate(fr);
-  voice[0] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F018.mp3?v=1605065703249"
-  );
-  voice[1] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F011.mp3?v=1605065704890"
-  );
-  voice[2] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F14.mp3?v=1605065705431"
-  );
-  voice[3] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F012.mp3?v=1605065705852"
-  );
-  voice[4] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F17.mp3?v=1605065706201"
-  );
-  voice[5] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F11.mp3?v=1605065707520"
-  );
-  voice[6] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F013.mp3?v=1605065707851"
-  );
-  voice[7] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F022.mp3?v=1605065708590"
-  );
-  voice[8] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F020.mp3?v=1605065708800"
-  );
-  voice[9] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F021.mp3?v=1605065709256"
-  );
-  voice[10] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F014.mp3?v=1605065709488"
-  );
-  voice[11] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F16.mp3?v=1605065710421"
-  );
-  voice[12] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F015.mp3?v=1605065710641"
-  );
-  voice[13] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F18.mp3?v=1605065710830"
-  );
-  voice[14] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F12.mp3?v=1605065711069"
-  );
-  voice[15] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F019.mp3?v=1605065711343"
-  );
-  voice[16] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F13.mp3?v=1605065711531"
-  );
-  voice[17] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F016.mp3?v=1605065712590"
-  );
-   voice[18] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F017.mp3?v=1605065712783"
-  ); 
-  voice[19] = loadSound(
-    "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2F023.mp3?v=1605065713039"
-  );
+  voice[0] = loadSound("./audio/018.mp3");
+  voice[1] = loadSound("./audio/011.mp3");
+  voice[2] = loadSound("./audio/14.mp3");
+  voice[3] = loadSound("./audio/012.mp3");
+  voice[4] = loadSound("./audio/17.mp3");
+  voice[5] = loadSound("./audio/11.mp3");
+  voice[6] = loadSound("./audio/013.mp3");
+  voice[7] = loadSound("./audio/022.mp3");
+  voice[8] = loadSound("./audio/020.mp3");
+  voice[9] = loadSound("./audio/021.mp3");
+  voice[10] = loadSound("./audio/014.mp3");
+  voice[11] = loadSound("./audio/16.mp3");
+  voice[12] = loadSound("./audio/015.mp3");
+  voice[13] = loadSound("./audio/18.mp3");
+  voice[14] = loadSound("./audio/12.mp3");
+  voice[15] = loadSound("./audio/019.mp3");
+  voice[16] = loadSound("./audio/13.mp3");
+  voice[17] = loadSound("./audio/016.mp3");
+  voice[18] = loadSound("./audio/017.mp3");
+  voice[19] = loadSound("./audio/023.mp3");
   randomvoiceplay();
 }
 
@@ -110,7 +68,7 @@ socket.on("connect", function() {
 
     // plogo.position(windowWidth/2, 50);
     plogo = createImg(
-      "https://cdn.glitch.com/b121cdbd-e958-4ffd-99dd-76922c2c225b%2Flogo02.png?v=1604966478405",
+      "./imgs/logo02.png",
       "퍼레이드진진진 로고",
       "",
       function(im) {
