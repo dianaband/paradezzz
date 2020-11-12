@@ -24,7 +24,7 @@ function preload() {
   loadJSON("/score.json", function(json) {
     score = json;
   });
-  silence = loadSound("_silence.wav");
+  silence = loadSound("./audio/_silence.wav");
 }
 
 function setup() {
