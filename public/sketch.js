@@ -10,7 +10,8 @@ if (http_confirm == "http") {
   window.location.replace("https://" + location.host);
 }
 
-var socket = io(location.host);
+//var socket = io(location.host);
+var socket = io("http://localhost");
 var n = 0;
 var fr = 20;
 var arr = [];
