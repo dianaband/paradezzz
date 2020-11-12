@@ -1,11 +1,16 @@
-html, body {
+html,
+body {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
 p {
-  font-family: Monaco;
+  margin: 1vw;
+  font-size: 3vw;
+  font-family: "Do Hyeon", sans-serif;
+  color: rgb(255, 64, 180);
+
 }
 
 @keyframes rolling {
@@ -16,4 +21,31 @@ p {
 
 .rotate {
   animation: rolling 3s linear infinite;
+}
+
+.roomsel {
+  display: flex;
+}
+
+.roomsel button {
+  width: 10%;
+  margin: auto;
+  padding: 3vw 0vw;
+  background-color: white;
+  border: 0.5vw solid rgb(255, 64, 180);
+  border-radius: 1vw;
+  color: rgb(255, 64, 180);
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.roomsel button:hover {
+  background-color: rgb(255, 64, 180, 0.1);
+}
+.num {
+    margin: 2vw;
+  font-size: 3vw;
+  font-family: "Do Hyeon", sans-serif;
+  color: rgb(255, 64, 180);
+
 }

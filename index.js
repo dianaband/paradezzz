@@ -1,15 +1,26 @@
 var http = require("http");
 var express = require("express");
 var app = express();
+// *--- force https ---*
+//from : https://glitch.com/edit/#!/force-http-or-https?path=server.js
+// app.set('trust proxy', true); // <- required
+// app.use((req, res, next) => {
+//   if(!req.secure) return res.redirect('https://' + req.get('host') + req.url);
+//   next();
+// });
+//^--- but, this doesn't work :( for us.
+// maybe... 'flyio' is interfering the middle (http://pzzz.ink <- flyio -> https://dianaband-paradezzz.glitch.me)
+// ==> so, we won't do it. but we will let the client do it. -> public/sketch.js #7 ~ #11
 var server = http.createServer(app);
 var port = process.env.PORT || 3000;
 server.listen(port);
+//
 app.use(express.static("public"));
-var io = require("socket.io")(server, {
+var io = require("socket.io")(server, { 
   pingInterval: 1000,
-  pingTimeout: 3000
-});
-
+  pingTimeout: 3000  
+});   
+ 
 //
 var score = require("./public/score.json");
 
@@ -24,7 +35,7 @@ io.on("connection", function(socket) {
   socket.on("disconnect", function() { console.log("someone disconnected."); });
   
   socket.on("room", function(room, fn) {
-    // parseInt(room)   
+    // parseInt(room)
     if (room >= 0 && room < roommax) {
       socket.join("room" + room);
       fn(true);
@@ -32,17 +43,17 @@ io.on("connection", function(socket) {
       fn(false);
     }
   });
-});
+});   
 
 //
 var pointer = 0; // pointer : 0 ~ (length-1)
 var looper;
-(looper = function(timeout) {
+(looper = function(timeout) { 
   setTimeout(function() {
     
     //pointer = 20;
-    console.log(score[pointer]);
-
+    // console.log(score[pointer]);
+ 
     //
     for (var index = 0; index < roommax; index++) {
       
