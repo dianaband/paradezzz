@@ -12,15 +12,15 @@ var app = express();
 // maybe... 'flyio' is interfering the middle (http://pzzz.ink <- flyio -> https://dianaband-paradezzz.glitch.me)
 // ==> so, we won't do it. but we will let the client do it. -> public/sketch.js #7 ~ #11
 var server = http.createServer(app);
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 9009;
 server.listen(port);
 //
 app.use(express.static("public"));
-var io = require("socket.io")(server, { 
+var io = require("socket.io")(server, {
   pingInterval: 1000,
-  pingTimeout: 3000  
-});   
- 
+  pingTimeout: 3000
+});
+
 //
 var score = require("./public/score.json");
 
@@ -33,7 +33,7 @@ var roommax = 16;
 io.on("connection", function(socket) {
   console.log("someone connected.");
   socket.on("disconnect", function() { console.log("someone disconnected."); });
-  
+
   socket.on("room", function(room, fn) {
     // parseInt(room)
     if (room >= 0 && room < roommax) {
@@ -43,35 +43,35 @@ io.on("connection", function(socket) {
       fn(false);
     }
   });
-});   
+});
 
 //
 var pointer = 0; // pointer : 0 ~ (length-1)
 var looper;
-(looper = function(timeout) { 
+(looper = function(timeout) {
   setTimeout(function() {
-    
+
     //pointer = 20;
     // console.log(score[pointer]);
- 
+
     //
     for (var index = 0; index < roommax; index++) {
-      
+
       // NOTE: 'pointer' must be 'remembered' since 'pointer' will increase almost immediately! pass as argument => 'pointed'
       // NOTE: 'index' is same => 'indexed'
       setTimeout(function(pointed, indexed) {
-        
+
         io.to("room" + indexed).emit("post", score[pointed]);
-        
+
       }, score[pointer].object.showtime * index, pointer, index);
     }
 
     var timegap = score[pointer].timegap.base + Math.random()*score[pointer].timegap.random;
     // console.log(timegap);
-    
-    pointer++;    
+
+    pointer++;
     if (pointer >= score.length) pointer = 0;
-    
+
     looper(timegap);
   }, timeout);
 })(1000);
