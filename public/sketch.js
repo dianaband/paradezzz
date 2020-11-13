@@ -29,6 +29,11 @@ function preload() {
 
 function setup() {
   noCanvas();
+  if (windowWidth > 1500 && windowWidth > windowHeight) {
+    fr = 30;
+  } else {
+    fr =20;
+  }
   frameRate(fr);
   voice[0] = loadSound("./audio/018.mp3");
   voice[1] = loadSound("./audio/011.mp3");
@@ -99,7 +104,7 @@ socket.on("connect", function() {
                 windowWidth / 2 - windowWidth/10,
                 windowHeight / 2
               );
-            }, 500);
+            }, 1000);
           } else {
             console.log("rejected!");
           }
@@ -138,15 +143,32 @@ socket.on("post", function(post) {
 
   var img = createImg(object.src, object.alt, "", function(im) {
     im.show();
-    im.size(
-      (windowHeight * (object.size.base + object.size.random * Math.random())) /
-        100,
-      AUTO
-    );
-    im.position(
-      windowWidth,
-      (windowHeight * (object.y.base + object.y.random * Math.random())) / 100
-    );
+    if (windowWidth > windowHeight) {
+      im.size(
+        (windowHeight *
+          (object.size.base * 1.4 + object.size.random * Math.random())) /
+          100,
+        AUTO
+      );
+      im.position(
+        windowWidth,
+        (windowHeight *
+          (object.y.base + object.y.random * Math.random()) *
+          0.5) /
+          100
+      );
+    } else {
+      im.size(
+        (windowHeight *
+          (object.size.base + object.size.random * Math.random())) /
+          100,
+        AUTO
+      );
+      im.position(
+        windowWidth,
+        (windowHeight * (object.y.base + object.y.random * Math.random())) / 100
+      );
+    }
     im.attribute("data-type", object.type);
     im.attribute("data-showtime", object.showtime / 1000); //milli-sec. -> seconds.
 
